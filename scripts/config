@@ -1,0 +1,26 @@
+#!/bin/bash
+source /usr/share/yunohost/helpers
+
+get__make_private() {
+ynh_app_setting_get --key=make_private 
+}
+set__make_private() {
+    case "$make_private" in
+        true|1|yes|True|YES)
+            ynh_replace \
+                --match="access_by_lua_block { return }" \
+                --replace="#access_by_lua_block { return }" \
+                --file="/etc/nginx/conf.d/$domain.d/$app.conf"
+            ;;
+        false|0|no|False|NO)
+            ynh_replace \
+                --match="#access_by_lua_block { return }" \
+                --replace="access_by_lua_block { return }" \
+                --file="/etc/nginx/conf.d/$domain.d/$app.conf"
+            ;;
+    esac
+    ynh_app_setting_set --key=make_private  --value="$make_private"
+    ynh_store_file_checksum "/etc/nginx/conf.d/$domain.d/$app.conf"
+}
+ynh_abort_if_errors
+ynh_app_config_run $1
