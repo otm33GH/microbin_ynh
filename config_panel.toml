@@ -1,0 +1,16 @@
+version = "1.0"
+
+[main]
+name.en = "Configuration panel"
+name.fr = "Panneau de configuration"
+services = ["nginx"]
+
+[main.options]
+
+[main.options.make_private]
+ask.en =  "Make the whole application private"
+ask.fr = "Rendre toute l'application privée"
+help.en = "Only users will be able to access shared files"
+help.fr = "Seuls les utilisateurs pourront accéder aux fichiers"
+type = "boolean"
+bind = "null"
