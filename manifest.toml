@@ -68,20 +68,7 @@ ram.runtime = "50M"
 
     [resources.permissions]
     main.url = "/"
-    upload.url = "/upload"
-    upload.show_tile = false   
-    upload.allowed = "visitors"
-    static.url = "/static"
-    static.show_tile = false   
-    static.allowed = "visitors"
-    raw.url = "/raw"
-    raw.show_tile = false   
-    raw.allowed = "visitors"
-    qr.url = "/qr"
-    qr.show_tile = false   
-    qr.allowed = "visitors"
-    p.url = "/p"
-    p.show_tile = false   
-    p.allowed = "visitors"
-    
+    urls = ["/upload", "/static", "/raw", "/qr", "/p"]
+    show_tile = false
+    allowed   = "visitors"
     [resources.ports]
