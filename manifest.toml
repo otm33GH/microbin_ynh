@@ -7,7 +7,7 @@ name = "MicroBin"
 description.en = "Configurable file-sharing and URL shortening web app"
 description.fr = "Partage de fichiers et de raccourcissement d'URL"
 
-version = "2.0.4~ynh5"
+version = "2.0.4~ynh6"
 
 maintainers = ["eric_G"]
 
@@ -37,7 +37,7 @@ ram.runtime = "50M"
 
     [install.init_main_permission]
     type = "group"
-    default = "visitors"
+    default = "users"
 
     [install.admin]
     type = "user"
@@ -68,5 +68,17 @@ ram.runtime = "50M"
 
     [resources.permissions]
     main.url = "/"
-
+    upload.url = "/upload"
+    upload.show_tile = false   
+    upload.allowed = "visitors"
+    static.url = "/static"
+    static.show_tile = false   
+    static.allowed = "visitors"
+    raw.url = "/raw"
+    raw.show_tile = false   
+    raw.allowed = "visitors"
+    qr.url = "/qr"
+    qr.show_tile = false   
+    qr.allowed = "visitors"
+    
     [resources.ports]
