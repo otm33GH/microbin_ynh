@@ -80,5 +80,8 @@ ram.runtime = "50M"
     qr.url = "/qr"
     qr.show_tile = false   
     qr.allowed = "visitors"
+    p.url = "/p"
+    p.show_tile = false   
+    p.allowed = "visitors"
     
     [resources.ports]
