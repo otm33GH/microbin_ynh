@@ -68,6 +68,9 @@ ram.runtime = "50M"
 
     [resources.permissions]
     main.url = "/"
+    list.url = "/list"
+    list.url.show_tile = "false"
+    list.allowed = "all_users"
     upload.url = "/upload"
     upload.show_tile = false   
     upload.allowed = "visitors"
@@ -82,5 +85,6 @@ ram.runtime = "50M"
     qr.allowed = "visitors"
     p.url = "/p"
     p.show_tile = false   
+    p.allowed = "visitors"
 
     [resources.ports]
