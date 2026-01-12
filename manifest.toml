@@ -75,22 +75,22 @@ ram.runtime = "50M"
     
     upload.url = "/upload"
     upload.show_tile = false   
-    upload.allowed = "visitors"
+    upload.allowed = ["all_users", "visitors"]
     
     static.url = "/static"
     static.show_tile = false   
     static.allowed = "visitors"
     
-    raw.url = "/raw"
+    raw.url = "/raw/"
     raw.show_tile = false   
-    raw.allowed = "visitors"
+    raw.allowed = ["all_users", "visitors"]
     
     qr.url = "/qr"
     qr.show_tile = false   
-    qr.allowed = "visitors"
+    qr.allowed = ["all_users", "visitors"]
     
     p.url = "/p"
     p.show_tile = false   
-    p.allowed = "visitors"
+    p.allowed = ["all_users", "visitors"]
 
     [resources.ports]
