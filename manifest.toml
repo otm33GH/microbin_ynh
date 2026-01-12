@@ -77,13 +77,13 @@ ram.runtime = "50M"
     upload.show_tile = false   
     upload.allowed = ["all_users", "visitors"]
     
-    static.url = "/static"
-    static.show_tile = false   
-    static.allowed = "visitors"
+ #   static.url = "/static"
+ #   static.show_tile = false   
+ #   static.allowed = "visitors"
     
-    raw.url = "/raw/"
-    raw.show_tile = false   
-    raw.allowed = ["all_users", "visitors"]
+ #   raw.url = "/raw/"
+ #   raw.show_tile = false   
+ #   raw.allowed = ["all_users", "visitors"]
     
     qr.url = "/qr"
     qr.show_tile = false   
