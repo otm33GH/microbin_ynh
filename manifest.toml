@@ -7,7 +7,7 @@ name = "MicroBin"
 description.en = "Configurable file-sharing and URL shortening web app"
 description.fr = "Partage de fichiers et de raccourcissement d'URL"
 
-version = "2.0.4~ynh6"
+version = "2.1.0~ynh6"
 
 maintainers = ["eric_G"]
 
