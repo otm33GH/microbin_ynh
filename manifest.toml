@@ -70,7 +70,7 @@ ram.runtime = "50M"
     main.url = "/"
     
     list.url = "/list"
-    list.show_tile = "false"
+    list.show_tile = false
     list.allowed = "all_users"
     
     upload.url = "/upload"
